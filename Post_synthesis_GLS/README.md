@@ -44,11 +44,11 @@ $read_liberty -lib /home/thomas_ubuntu/VSDBabySoC_1/VSDBabySoC/src/lib/sky130_fd
 $synth -top vsdbabysoc
 ```
 - The list of standard cells used can be seen as:
-<div align="center"><img src="images/soc_clk.png" alt="Alt Text" width="700"/> </div>
-<div align="center"><img src="images/soc_rvmyth.png" alt="Alt Text" width="700"/> </div>
-<div align="center"><img src="images/soc_vsd.png" alt="Alt Text" width="700"/> </div>
+<div align="center"><img src="images/soc_clk.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/soc_rvmyth.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/soc_vsd.png" alt="Alt Text" width="500"/> </div>
 
 - The heirarchy of modules:
-  <div align="center"><img src="images/soc_heir.png" alt="Alt Text" width="700"/> </div>
+  <div align="center"><img src="images/soc_heir.png" alt="Alt Text" width="500"/> </div>
 
 
