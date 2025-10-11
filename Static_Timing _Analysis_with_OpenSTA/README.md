@@ -7,7 +7,7 @@ OpenSTA is a open-source static timing analysis tool.
 
 OpenSTA installed and accessed:
 
-<div align="center"><img src="images/opensta_.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/opensta_.png" alt="Alt Text" width="800"/> </div>
 
 ---
 ### 2. Using OpenSTA to do timing analysis
@@ -19,7 +19,7 @@ OpenSTA installed and accessed:
 $ sudo docker run -i -v $HOME:/data opensta
 ```
 
-<div align="center"><img src="images/opensta_access.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/opensta_access.png" alt="Alt Text" width="800"/> </div>
 
 #### 2. Reading the .lib files that are part of the top module:
 
@@ -51,6 +51,6 @@ read_sdc vsdbabysoc_synthesis.sdc
 report_checks
 ```
 
-<div align="center"><img src="images/opensta_report.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/opensta_report.png" alt="Alt Text" width="800"/> </div>
 
 
