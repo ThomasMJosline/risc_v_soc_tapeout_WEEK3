@@ -51,4 +51,33 @@ $synth -top vsdbabysoc
 - The heirarchy of modules:
   <div align="center"><img src="images/soc_heir.png" alt="Alt Text" width="500"/> </div>
 
+#### 4. Mapping D Flip-Flops to standard cells:
 
+```
+$dfflibmap -liberty /home/thomas_ubuntu/VSDBabySoC_1/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+#### 5. Performing optimization and technology mapping:
+
+```
+$opt
+$abc -liberty /home/thomas_ubuntu/VSDBabySoC_1/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
+```
+
+#### 6. Perform Final clean-up:
+
+```
+$flatten
+$setundef -zero
+$clean -purge
+$rename -enumerate
+```
+<div align="center"><img src="images/soc_flat.png" alt="Alt Text" width="500"/> </div>
+
+#### 7. Statistics of standard cells:
+
+```
+$stat
+```
+<div align="center"><img src="images/soc_stat1.png" alt="Alt Text" width="500"/> </div>
+<div align="center"><img src="images/soc_stat2.png" alt="Alt Text" width="500"/> </div>
